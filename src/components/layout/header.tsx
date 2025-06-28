@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, SewingPin } from 'lucide-react';
+import { Menu, Scissors } from 'lucide-react';
 
 export function Header() {
   const navLinks = [
@@ -14,7 +14,7 @@ export function Header() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex items-center">
           <Link href="/" className="flex items-center gap-2">
-            <SewingPin className="h-6 w-6 text-primary" />
+            <Scissors className="h-6 w-6 text-primary" />
             <span className="font-bold font-headline">Confección Estrellita</span>
           </Link>
         </div>
@@ -40,7 +40,7 @@ export function Header() {
             <SheetContent side="right">
               <nav className="flex flex-col gap-6 text-lg font-medium mt-10">
                 <Link href="/" className="flex items-center gap-2 mb-4">
-                  <SewingPin className="h-6 w-6 text-primary" />
+                  <Scissors className="h-6 w-6 text-primary" />
                   <span className="font-bold font-headline">Confección Estrellita</span>
                 </Link>
                 {navLinks.map((link) => (
