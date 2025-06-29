@@ -19,23 +19,23 @@ export interface Station {
 const stations: Station[] = [
   {
     slug: 'design-and-pattern-making',
-    title: 'Design and Pattern Making',
-    shortDescription: 'Conceptualizing ideas and creating precise blueprints for production.',
-    description: 'This initial phase is where creativity meets precision. Our designers collaborate to create innovative styles, which are then translated into detailed patterns. These patterns serve as the essential blueprints for every garment, ensuring consistency and quality from the very first step.',
+    title: 'Diseño y Patronaje',
+    shortDescription: 'Conceptualizando ideas y creando planos precisos para la producción.',
+    description: 'Esta fase inicial es donde la creatividad se encuentra con la precisión. Nuestros diseñadores colaboran para crear estilos innovadores, que luego se traducen en patrones detallados. Estos patrones sirven como los planos esenciales para cada prenda, asegurando consistencia y calidad desde el primer paso.',
     icon: DesignIcon,
     processDetails: [
-      "Market research and trend analysis.",
-      "Sketching and digital design creation using CAD software.",
-      "Material selection and sourcing.",
-      "Creating initial paper or digital patterns.",
-      "Prototyping and sample fitting."
+      "Investigación de mercado y análisis de tendencias.",
+      "Bocetos y creación de diseños digitales usando software CAD.",
+      "Selección y abastecimiento de materiales.",
+      "Creación de patrones iniciales en papel o digitales.",
+      "Creación de prototipos y ajuste de muestras."
     ],
     metrics: [
-      { name: "Time to First Pattern", value: "24-48 hours" },
-      { name: "Pattern Accuracy", value: "99.5%" },
-      { name: "Designs per Quarter", value: "50+" },
+      { name: "Tiempo para el Primer Patrón", value: "24-48 horas" },
+      { name: "Precisión del Patrón", value: "99.5%" },
+      { name: "Diseños por Trimestre", value: "50+" },
     ],
-    proposedImprovements: `// Software-based improvement proposal
+    proposedImprovements: `// Propuesta de mejora basada en software
 function integrate3DPrototyping(pattern) {
   const digitalPattern = convertTo3D(pattern);
   const virtualFit = simulateGarmentOnAvatar(digitalPattern);
@@ -44,7 +44,7 @@ function integrate3DPrototyping(pattern) {
   }
   return digitalPattern;
 }
-// This reduces material waste from physical samples by up to 70%.`,
+// Esto reduce el desperdicio de material de muestras físicas hasta en un 70%.`,
     galleryImages: [
       'https://placehold.co/600x400',
       'https://placehold.co/600x400',
@@ -53,25 +53,25 @@ function integrate3DPrototyping(pattern) {
   },
   {
     slug: 'cutting',
-    title: 'Cutting',
-    shortDescription: 'Transforming fabric into precisely cut pieces for assembly.',
-    description: 'Using advanced automated machinery, large rolls of fabric are carefully laid out and cut according to the patterns created in the design phase. Precision is key here to minimize waste and ensure every component of the garment fits perfectly together.',
+    title: 'Corte',
+    shortDescription: 'Transformando tela en piezas cortadas con precisión para el ensamblaje.',
+    description: 'Utilizando maquinaria automatizada avanzada, grandes rollos de tela se extienden y cortan cuidadosamente según los patrones creados en la fase de diseño. La precisión es clave aquí para minimizar el desperdicio y asegurar que cada componente de la prenda encaje perfectamente.',
     icon: CuttingIcon,
     processDetails: [
-      "Fabric inspection for defects.",
-      "Spreading multiple layers of fabric.",
-      "Automated CNC cutting based on digital patterns.",
-      "Bundling of cut pieces for the sewing department.",
-      "Waste material sorting and recycling."
+      "Inspección de la tela en busca de defectos.",
+      "Extendido de múltiples capas de tela.",
+      "Corte CNC automatizado basado en patrones digitales.",
+      "Agrupación de piezas cortadas para el departamento de costura.",
+      "Clasificación y reciclaje de material de desecho."
     ],
     metrics: [
-      { name: "Fabric Utilization", value: "92%" },
-      { name: "Cutting Speed", value: "500 pieces/hour" },
-      { name: "Cut Accuracy", value: "±1mm" },
+      { name: "Utilización de Tela", value: "92%" },
+      { name: "Velocidad de Corte", value: "500 piezas/hora" },
+      { name: "Precisión de Corte", value: "±1mm" },
     ],
-    proposedImprovements: `// Operational improvement proposal
-We can optimize fabric layouts using an AI-powered nesting algorithm.
-This could increase fabric utilization from 92% to 95%, saving thousands in material costs annually. The algorithm would analyze all cut pieces for an order and find the most efficient arrangement on the fabric spread.`,
+    proposedImprovements: `// Propuesta de mejora operativa
+Podemos optimizar los diseños de tela utilizando un algoritmo de anidamiento impulsado por IA.
+Esto podría aumentar la utilización de la tela del 92% al 95%, ahorrando miles en costos de material anualmente. El algoritmo analizaría todas las piezas cortadas de un pedido y encontraría la disposición más eficiente en el extendido de la tela.`,
     galleryImages: [
       'https://placehold.co/600x400',
       'https://placehold.co/600x400',
@@ -80,24 +80,24 @@ This could increase fabric utilization from 92% to 95%, saving thousands in mate
   },
   {
     slug: 'sewing',
-    title: 'Sewing',
-    shortDescription: 'Assembling cut fabric pieces into finished garments.',
-    description: 'Skilled operators use a variety of industrial sewing machines to assemble the cut pieces. This is where the garment takes its final shape. Our production lines are organized for maximum efficiency, with each operator specializing in a specific part of the assembly process.',
+    title: 'Costura',
+    shortDescription: 'Ensamblando piezas de tela cortadas para crear prendas terminadas.',
+    description: 'Operarios calificados utilizan una variedad de máquinas de coser industriales para ensamblar las piezas cortadas. Aquí es donde la prenda toma su forma final. Nuestras líneas de producción están organizadas para una máxima eficiencia, con cada operario especializándose en una parte específica del proceso de ensamblaje.',
     icon: SewingIcon,
     processDetails: [
-      "Component assembly in a production line.",
-      "Use of specialized machines (overlock, lockstitch, etc.).",
-      "Stitching seams, attaching collars, sleeves, and pockets.",
-      "In-line quality checks at various points.",
-      "Thread trimming and initial pressing."
+      "Ensamblaje de componentes en una línea de producción.",
+      "Uso de máquinas especializadas (overlock, pespunte, etc.).",
+      "Costura de uniones, colocación de cuellos, mangas y bolsillos.",
+      "Controles de calidad en línea en varios puntos.",
+      "Corte de hilos y planchado inicial."
     ],
     metrics: [
-      { name: "Garments per Hour", value: "120" },
-      { name: "Defect Rate", value: "< 1.5%" },
-      { name: "Line Efficiency", value: "85%" },
+      { name: "Prendas por Hora", value: "120" },
+      { name: "Tasa de Defectos", value: "< 1.5%" },
+      { name: "Eficiencia de Línea", value: "85%" },
     ],
-    proposedImprovements: `// Technology improvement proposal
-Implementing RFID trackers in each garment bundle can provide real-time production monitoring. This would allow supervisors to identify bottlenecks in the sewing line instantly and reallocate resources to maintain optimal flow, potentially increasing line efficiency to over 90%.`,
+    proposedImprovements: `// Propuesta de mejora tecnológica
+La implementación de rastreadores RFID en cada paquete de prendas puede proporcionar un monitoreo de la producción en tiempo real. Esto permitiría a los supervisores identificar cuellos de botella en la línea de costura al instante y reasignar recursos para mantener un flujo óptimo, aumentando potencialmente la eficiencia de la línea a más del 90%.`,
     galleryImages: [
       'https://placehold.co/600x400',
       'https://placehold.co/600x400',
@@ -106,24 +106,24 @@ Implementing RFID trackers in each garment bundle can provide real-time producti
   },
   {
     slug: 'finishing-and-quality-control',
-    title: 'Finishing & Quality Control',
-    shortDescription: 'Adding final touches and ensuring every garment meets our high standards.',
-    description: 'After sewing, garments go through a finishing process which may include washing, pressing, and attaching buttons or labels. The final and most critical step is Quality Control, where each garment is meticulously inspected to ensure it meets our stringent quality standards.',
+    title: 'Acabado y Control de Calidad',
+    shortDescription: 'Añadiendo los toques finales y asegurando que cada prenda cumpla con nuestros altos estándares.',
+    description: 'Después de la costura, las prendas pasan por un proceso de acabado que puede incluir lavado, planchado y colocación de botones o etiquetas. El paso final y más crítico es el Control de Calidad, donde cada prenda es meticulosamente inspeccionada para asegurar que cumple con nuestros estrictos estándares de calidad.',
     icon: FinishingIcon,
     processDetails: [
-      "Buttoning, zippering, and trim application.",
-      "Garment washing or special treatments.",
-      "Final pressing and steaming.",
-      "Detailed inspection of stitching, measurements, and fabric.",
-      "Tagging and labeling."
+      "Colocación de botones, cremalleras y adornos.",
+      "Lavado de prendas o tratamientos especiales.",
+      "Planchado y vaporizado final.",
+      "Inspección detallada de costuras, medidas y tela.",
+      "Etiquetado y colocación de marquillas."
     ],
     metrics: [
-      { name: "Final Pass Rate", value: "98%" },
-      { name: "Inspection Points per Garment", value: "25" },
-      { name: "Customer Return Rate (Quality)", value: "< 0.5%" },
+      { name: "Tasa de Aprobación Final", value: "98%" },
+      { name: "Puntos de Inspección por Prenda", value: "25" },
+      { name: "Tasa de Devolución (Calidad)", value: "< 0.5%" },
     ],
-    proposedImprovements: `// Process improvement proposal
-Utilizing a vision-based AI system for quality control can supplement human inspection. The system can scan garments for common defects like missed stitches or fabric flaws at a rate of 5 garments per second, flagging potential issues for human review. This ensures 100% inspection coverage for specific defect types.`,
+    proposedImprovements: `// Propuesta de mejora de proceso
+Utilizar un sistema de IA basado en visión para el control de calidad puede complementar la inspección humana. El sistema puede escanear prendas en busca de defectos comunes como puntadas omitidas o fallas en la tela a una velocidad de 5 prendas por segundo, marcando posibles problemas para la revisión humana. Esto asegura una cobertura de inspección del 100% para tipos de defectos específicos.`,
     galleryImages: [
       'https://placehold.co/600x400',
       'https://placehold.co/600x400',
@@ -132,24 +132,24 @@ Utilizing a vision-based AI system for quality control can supplement human insp
   },
   {
     slug: 'packaging-and-distribution',
-    title: 'Packaging & Distribution',
-    shortDescription: 'Preparing finished garments for their journey to the customer.',
-    description: 'Once a garment passes final inspection, it is carefully folded, packaged, and boxed. Our logistics team then ensures that orders are accurately picked, packed, and shipped to our clients around the world, completing the production cycle.',
+    title: 'Empaque y Distribución',
+    shortDescription: 'Preparando las prendas terminadas para su viaje hacia el cliente.',
+    description: 'Una vez que una prenda pasa la inspección final, se dobla, empaqueta y encaja cuidadosamente. Nuestro equipo de logística luego se asegura de que los pedidos se recojan, empaquen y envíen con precisión a nuestros clientes de todo el mundo, completando el ciclo de producción.',
     icon: PackagingIcon,
     processDetails: [
-      "Folding and bagging individual garments.",
-      "Barcode scanning for inventory management.",
-      "Packing garments into shipping cartons.",
-      "Generating shipping labels and documentation.",
-      "Loading shipments for dispatch."
+      "Doblado y embolsado de prendas individuales.",
+      "Escaneo de códigos de barras para la gestión de inventario.",
+      "Empaque de prendas en cajas de envío.",
+      "Generación de etiquetas de envío y documentación.",
+      "Carga de envíos para su despacho."
     ],
     metrics: [
-      { name: "Order Accuracy", value: "99.9%" },
-      { name: "Time to Dispatch", value: "< 24 hours from production finish" },
-      { name: "Packaging Material", value: "80% recycled materials" },
+      { name: "Precisión de Pedidos", value: "99.9%" },
+      { name: "Tiempo de Despacho", value: "< 24 horas desde producción" },
+      { name: "Material de Empaque", value: "80% reciclados" },
     ],
-    proposedImprovements: `// Automation improvement proposal
-An automated bagging and sealing machine can increase packaging speed by 200%. This would reduce labor costs in the packaging department and ensure a more consistent and professional final presentation of the product. It would also reduce the time from production finish to dispatch.`,
+    proposedImprovements: `// Propuesta de mejora de automatización
+Una máquina automatizada de embolsado y sellado puede aumentar la velocidad de empaque en un 200%. Esto reduciría los costos de mano de obra en el departamento de empaque y garantizaría una presentación final del producto más consistente y profesional. También reduciría el tiempo desde la finalización de la producción hasta el despacho.`,
     galleryImages: [
       'https://placehold.co/600x400',
       'https://placehold.co/600x400',

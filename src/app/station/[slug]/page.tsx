@@ -34,7 +34,7 @@ export default function StationPage({ params }: { params: { slug: string } }) {
           <Button asChild variant="ghost">
             <Link href="/#process">
               <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Process
+              Volver al Proceso
             </Link>
           </Button>
         </div>
@@ -55,7 +55,7 @@ export default function StationPage({ params }: { params: { slug: string } }) {
           <div className="md:col-span-2 space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2"><SlidersHorizontal className="text-primary"/> Process Details</CardTitle>
+                <CardTitle className="flex items-center gap-2"><SlidersHorizontal className="text-primary"/> Detalles del Proceso</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 list-inside">
@@ -71,7 +71,7 @@ export default function StationPage({ params }: { params: { slug: string } }) {
 
             <Card>
               <CardHeader>
-                <CardTitle className="flex items-center gap-2"><BarChart2 className="text-primary"/> Key Metrics</CardTitle>
+                <CardTitle className="flex items-center gap-2"><BarChart2 className="text-primary"/> Métricas Clave</CardTitle>
               </CardHeader>
               <CardContent className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
                 {station.metrics.map((metric, index) => (
@@ -85,9 +85,9 @@ export default function StationPage({ params }: { params: { slug: string } }) {
 
             <Card>
               <CardHeader>
-                <CardTitle>Proposed Improvements</CardTitle>
+                <CardTitle>Mejoras Propuestas</CardTitle>
                 <CardDescription>
-                  Innovations to enhance efficiency and quality.
+                  Innovaciones para mejorar la eficiencia y la calidad.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -101,7 +101,7 @@ export default function StationPage({ params }: { params: { slug: string } }) {
           <div className="md:col-span-1">
             <Card>
               <CardHeader>
-                <CardTitle>Station Gallery</CardTitle>
+                <CardTitle>Galería de la Estación</CardTitle>
               </CardHeader>
               <CardContent>
                 <Carousel className="w-full">
@@ -113,7 +113,7 @@ export default function StationPage({ params }: { params: { slug: string } }) {
                             <CardContent className="flex aspect-video items-center justify-center p-0">
                               <Image
                                 src={src}
-                                alt={`${station.title} gallery image ${index + 1}`}
+                                alt={`Imagen de la galería de ${station.title} ${index + 1}`}
                                 width={600}
                                 height={400}
                                 className="object-cover w-full h-full"

@@ -13,7 +13,7 @@ export function LocationMap() {
       <Link href={mapUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full group">
         <Image
           src="https://placehold.co/1200x800.png"
-          alt="Map showing location of Confección Estrellita"
+          alt="Mapa mostrando la ubicación de Confección Estrellita"
           fill={true}
           objectFit="cover"
           className="rounded-lg"
@@ -22,7 +22,7 @@ export function LocationMap() {
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-lg transition-colors group-hover:bg-black/50">
           <Button size="lg">
             <MapPin className="mr-2 h-5 w-5" />
-            View on Google Maps
+            Ver en Google Maps
           </Button>
         </div>
       </Link>

@@ -10,7 +10,7 @@ export default function Home() {
             Confección Estrellita
           </h1>
           <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            A digital showcase of our industrial textile process, blending tradition with technology for superior quality.
+            Un showcase digital de nuestro proceso industrial textil, fusionando tradición con tecnología para una calidad superior.
           </p>
         </div>
       </section>

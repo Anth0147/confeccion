@@ -10,9 +10,9 @@ export function InfographicSection() {
     <section id="process" className="py-16 md:py-24 w-full">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline">Our Industrial Process</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline">Nuestro Proceso Industrial</h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            From a simple thread to a finished garment, explore each stage of our manufacturing journey.
+            Desde un simple hilo hasta una prenda terminada, explora cada etapa de nuestro viaje de fabricación.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ export function InfographicSection() {
                   <CardContent>
                     <p className="text-muted-foreground text-sm">{station.shortDescription}</p>
                     <div className="flex items-center justify-center mt-4 text-sm font-semibold text-primary opacity-0 group-hover:opacity-100 transition-opacity">
-                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                      Aprender Más <ArrowRight className="ml-2 h-4 w-4" />
                     </div>
                   </CardContent>
                 </Card>

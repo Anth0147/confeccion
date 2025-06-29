@@ -5,8 +5,8 @@ import { Menu, Scissors } from 'lucide-react';
 
 export function Header() {
   const navLinks = [
-    { name: 'Our Process', href: '#process' },
-    { name: 'Contact Us', href: '#contact' },
+    { name: 'Nuestro Proceso', href: '#process' },
+    { name: 'Contáctanos', href: '#contact' },
   ];
 
   return (
@@ -34,7 +34,7 @@ export function Header() {
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon" className="md:hidden">
                 <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle Menu</span>
+                <span className="sr-only">Alternar Menú</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right">
