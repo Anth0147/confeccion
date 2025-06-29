@@ -12,7 +12,6 @@ export interface Station {
   icon: React.ComponentType<{ className?: string }>;
   processDetails: string[];
   metrics: { name: string; value: string }[];
-  proposedImprovements: string;
   galleryImages: string[];
 }
 
@@ -35,16 +34,6 @@ const stations: Station[] = [
       { name: "Precisión del Patrón", value: "99.5%" },
       { name: "Diseños por Trimestre", value: "50+" },
     ],
-    proposedImprovements: `// Propuesta de mejora basada en software
-function integrate3DPrototyping(pattern) {
-  const digitalPattern = convertTo3D(pattern);
-  const virtualFit = simulateGarmentOnAvatar(digitalPattern);
-  if(virtualFit.issues.length > 0) {
-    return refinePattern(pattern, virtualFit.feedback);
-  }
-  return digitalPattern;
-}
-// Esto reduce el desperdicio de material de muestras físicas hasta en un 70%.`,
     galleryImages: [
       'https://placehold.co/600x400',
       'https://placehold.co/600x400',
@@ -69,9 +58,6 @@ function integrate3DPrototyping(pattern) {
       { name: "Velocidad de Corte", value: "500 piezas/hora" },
       { name: "Precisión de Corte", value: "±1mm" },
     ],
-    proposedImprovements: `// Propuesta de mejora operativa
-Podemos optimizar los diseños de tela utilizando un algoritmo de anidamiento impulsado por IA.
-Esto podría aumentar la utilización de la tela del 92% al 95%, ahorrando miles en costos de material anualmente. El algoritmo analizaría todas las piezas cortadas de un pedido y encontraría la disposición más eficiente en el extendido de la tela.`,
     galleryImages: [
       'https://placehold.co/600x400',
       'https://placehold.co/600x400',
@@ -96,8 +82,6 @@ Esto podría aumentar la utilización de la tela del 92% al 95%, ahorrando miles
       { name: "Tasa de Defectos", value: "< 1.5%" },
       { name: "Eficiencia de Línea", value: "85%" },
     ],
-    proposedImprovements: `// Propuesta de mejora tecnológica
-La implementación de rastreadores RFID en cada paquete de prendas puede proporcionar un monitoreo de la producción en tiempo real. Esto permitiría a los supervisores identificar cuellos de botella en la línea de costura al instante y reasignar recursos para mantener un flujo óptimo, aumentando potencialmente la eficiencia de la línea a más del 90%.`,
     galleryImages: [
       'https://placehold.co/600x400',
       'https://placehold.co/600x400',
@@ -122,8 +106,6 @@ La implementación de rastreadores RFID en cada paquete de prendas puede proporc
       { name: "Puntos de Inspección por Prenda", value: "25" },
       { name: "Tasa de Devolución (Calidad)", value: "< 0.5%" },
     ],
-    proposedImprovements: `// Propuesta de mejora de proceso
-Utilizar un sistema de IA basado en visión para el control de calidad puede complementar la inspección humana. El sistema puede escanear prendas en busca de defectos comunes como puntadas omitidas o fallas en la tela a una velocidad de 5 prendas por segundo, marcando posibles problemas para la revisión humana. Esto asegura una cobertura de inspección del 100% para tipos de defectos específicos.`,
     galleryImages: [
       'https://placehold.co/600x400',
       'https://placehold.co/600x400',
@@ -148,8 +130,6 @@ Utilizar un sistema de IA basado en visión para el control de calidad puede com
       { name: "Tiempo de Despacho", value: "< 24 horas desde producción" },
       { name: "Material de Empaque", value: "80% reciclados" },
     ],
-    proposedImprovements: `// Propuesta de mejora de automatización
-Una máquina automatizada de embolsado y sellado puede aumentar la velocidad de empaque en un 200%. Esto reduciría los costos de mano de obra en el departamento de empaque y garantizaría una presentación final del producto más consistente y profesional. También reduciría el tiempo desde la finalización de la producción hasta el despacho.`,
     galleryImages: [
       'https://placehold.co/600x400',
       'https://placehold.co/600x400',

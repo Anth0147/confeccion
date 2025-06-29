@@ -82,20 +82,6 @@ export default function StationPage({ params }: { params: { slug: string } }) {
                 ))}
               </CardContent>
             </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle>Mejoras Propuestas</CardTitle>
-                <CardDescription>
-                  Innovaciones para mejorar la eficiencia y la calidad.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="bg-gray-900 rounded-lg p-4 text-sm">
-                  <pre><code className="font-code text-gray-300">{station.proposedImprovements}</code></pre>
-                </div>
-              </CardContent>
-            </Card>
           </div>
 
           <div className="md:col-span-1">
