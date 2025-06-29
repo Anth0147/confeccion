@@ -1,8 +1,10 @@
 import { CuttingIcon } from '@/components/icons/cutting-icon';
 import { DesignIcon } from '@/components/icons/design-icon';
-import { FinishingIcon } from '@/components/icons/finishing-icon';
 import { PackagingIcon } from '@/components/icons/packaging-icon';
 import { SewingIcon } from '@/components/icons/sewing-icon';
+import { MaterialsIcon } from '@/components/icons/materials-icon';
+import { EmbroideryIcon } from '@/components/icons/embroidery-icon';
+import { QualityControlIcon } from '@/components/icons/quality-control-icon';
 
 export interface Station {
   slug: string;
@@ -18,14 +20,13 @@ export interface Station {
 const stations: Station[] = [
   {
     slug: 'design-and-pattern-making',
-    title: 'Diseño y Patronaje',
+    title: 'Estación 1: Diseño y Patronaje',
     shortDescription: 'Conceptualizando ideas y creando planos precisos para la producción.',
     description: 'Esta fase inicial es donde la creatividad se encuentra con la precisión. Nuestros diseñadores colaboran para crear estilos innovadores, que luego se traducen en patrones detallados. Estos patrones sirven como los planos esenciales para cada prenda, asegurando consistencia y calidad desde el primer paso.',
     icon: DesignIcon,
     processDetails: [
       "Investigación de mercado y análisis de tendencias.",
       "Bocetos y creación de diseños digitales usando software CAD.",
-      "Selección y abastecimiento de materiales.",
       "Creación de patrones iniciales en papel o digitales.",
       "Creación de prototipos y ajuste de muestras."
     ],
@@ -41,8 +42,31 @@ const stations: Station[] = [
     ],
   },
   {
+    slug: 'material-selection',
+    title: 'Estación 2: Selección de Materiales',
+    shortDescription: 'Eligiendo las telas y materiales perfectos para cada prenda.',
+    description: 'Cada gran prenda comienza con materiales de alta calidad. En esta etapa, seleccionamos cuidadosamente las telas, hilos y accesorios que cumplen con nuestros estándares de durabilidad, comodidad y estética. Inspeccionamos cada lote para garantizar la uniformidad del color y la textura.',
+    icon: MaterialsIcon,
+    processDetails: [ 
+      "Recepción e inspección de materias primas.", 
+      "Pruebas de encogimiento, color y resistencia.", 
+      "Almacenamiento de telas en condiciones óptimas.", 
+      "Asignación de materiales a órdenes de producción." 
+    ],
+    metrics: [ 
+      { name: "Tasa de Aprobación", value: "99%" }, 
+      { name: "Variedad de Telas", value: "200+" }, 
+      { name: "Tiempo de Inspección", value: "2 horas/lote" } 
+    ],
+    galleryImages: [ 
+      '/images/materials/image-1.jpg', 
+      '/images/materials/image-2.jpg', 
+      '/images/materials/image-3.jpg' 
+    ],
+  },
+  {
     slug: 'cutting',
-    title: 'Corte',
+    title: 'Estación 3: Corte',
     shortDescription: 'Transformando tela en piezas cortadas con precisión para el ensamblaje.',
     description: 'Utilizando maquinaria automatizada avanzada, grandes rollos de tela se extienden y cortan cuidadosamente según los patrones creados en la fase de diseño. La precisión es clave aquí para minimizar el desperdicio y asegurar que cada componente de la prenda encaje perfectamente.',
     icon: CuttingIcon,
@@ -66,7 +90,7 @@ const stations: Station[] = [
   },
   {
     slug: 'sewing',
-    title: 'Costura',
+    title: 'Estación 4: Costura',
     shortDescription: 'Ensamblando piezas de tela cortadas para crear prendas terminadas.',
     description: 'Operarios calificados utilizan una variedad de máquinas de coser industriales para ensamblar las piezas cortadas. Aquí es donde la prenda toma su forma final. Nuestras líneas de producción están organizadas para una máxima eficiencia, con cada operario especializándose en una parte específica del proceso de ensamblaje.',
     icon: SewingIcon,
@@ -89,32 +113,56 @@ const stations: Station[] = [
     ],
   },
   {
-    slug: 'finishing-and-quality-control',
-    title: 'Acabado y Control de Calidad',
-    shortDescription: 'Añadiendo los toques finales y asegurando que cada prenda cumpla con nuestros altos estándares.',
-    description: 'Después de la costura, las prendas pasan por un proceso de acabado que puede incluir lavado, planchado y colocación de botones o etiquetas. El paso final y más crítico es el Control de Calidad, donde cada prenda es meticulosamente inspeccionada para asegurar que cumple con nuestros estrictos estándares de calidad.',
-    icon: FinishingIcon,
+    slug: 'embroidery-and-printing',
+    title: 'Estación 5: Bordado y Estampado',
+    shortDescription: 'Añadiendo diseños únicos y personalizados a las prendas.',
+    description: 'Aquí es donde las prendas adquieren personalidad. Utilizamos técnicas de bordado computarizado y estampado de última generación, como serigrafía y sublimación, para aplicar diseños complejos con una precisión y durabilidad excepcionales.',
+    icon: EmbroideryIcon,
+    processDetails: [ 
+      "Digitalización de diseños para bordado o estampado.", 
+      "Preparación de prendas y bastidores.", 
+      "Ejecución de bordado con máquinas multi-cabeza.", 
+      "Aplicación de estampados con tintas ecológicas.", 
+      "Curado de tintas para máxima durabilidad." 
+    ],
+    metrics: [ 
+      { name: "Precisión de Diseño", value: "99.8%" }, 
+      { name: "Puntadas por Minuto", value: "1,200" }, 
+      { name: "Durabilidad (Lavados)", value: "50+" } 
+    ],
+    galleryImages: [ 
+      '/images/embroidery/image-1.jpg', 
+      '/images/embroidery/image-2.jpg', 
+      '/images/embroidery/image-3.jpg' 
+    ],
+  },
+  {
+    slug: 'quality-control',
+    title: 'Estación 6: Control de Calidad',
+    shortDescription: 'Asegurando que cada prenda cumpla con nuestros altos estándares.',
+    description: 'Este es el paso final y más crítico antes del empaque. Cada prenda es meticulosamente inspeccionada por nuestro equipo de control de calidad para asegurar que cumple con nuestros estrictos estándares en costuras, medidas, acabados y apariencia general. Solo lo mejor llega a nuestros clientes.',
+    icon: QualityControlIcon,
     processDetails: [
-      "Colocación de botones, cremalleras y adornos.",
-      "Lavado de prendas o tratamientos especiales.",
-      "Planchado y vaporizado final.",
-      "Inspección detallada de costuras, medidas y tela.",
-      "Etiquetado y colocación de marquillas."
+      "Inspección visual y dimensional de cada prenda.",
+      "Verificación de costuras, botones y cremalleras.",
+      "Planchado y vaporizado final para una presentación impecable.",
+      "Eliminación de hilos sueltos y limpieza.",
+      "Etiquetado final y colocación de marquillas."
     ],
     metrics: [
       { name: "Tasa de Aprobación Final", value: "98%" },
-      { name: "Puntos de Inspección por Prenda", value: "25" },
-      { name: "Tasa de Devolución (Calidad)", value: "< 0.5%" },
+      { name: "Puntos de Inspección", value: "25 por prenda" },
+      { name: "Tasa de Devolución", value: "< 0.5%" },
     ],
     galleryImages: [
-      '/images/finishing/image-1.jpg',
-      '/images/finishing/image-2.jpg',
-      '/images/finishing/image-3.jpg',
+      '/images/quality-control/image-1.jpg',
+      '/images/quality-control/image-2.jpg',
+      '/images/quality-control/image-3.jpg',
     ],
   },
   {
     slug: 'packaging-and-distribution',
-    title: 'Empaque y Distribución',
+    title: 'Estación 7: Empaque y Distribución',
     shortDescription: 'Preparando las prendas terminadas para su viaje hacia el cliente.',
     description: 'Una vez que una prenda pasa la inspección final, se dobla, empaqueta y encaja cuidadosamente. Nuestro equipo de logística luego se asegura de que los pedidos se recojan, empaquen y envíen con precisión a nuestros clientes de todo el mundo, completando el ciclo de producción.',
     icon: PackagingIcon,
@@ -127,8 +175,8 @@ const stations: Station[] = [
     ],
     metrics: [
       { name: "Precisión de Pedidos", value: "99.9%" },
-      { name: "Tiempo de Despacho", value: "< 24 horas desde producción" },
-      { name: "Material de Empaque", value: "80% reciclados" },
+      { name: "Tiempo de Despacho", value: "< 24 horas" },
+      { name: "Empaque Reciclado", value: "80%" },
     ],
     galleryImages: [
       '/images/packaging/image-1.jpg',

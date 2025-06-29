@@ -17,8 +17,8 @@ export function InfographicSection() {
         </div>
 
         <div className="relative">
-          <div className="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-border -translate-y-1/2"></div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div className="hidden md:block absolute top-1/2 left-0 w-full h-px bg-border -translate-y-1/2"></div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-8">
             {stations.map((station, index) => (
               <Link key={station.slug} href={`/station/${station.slug}`} className="group block z-10">
                 <Card className="h-full text-center transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 border-2 border-transparent hover:border-primary">
@@ -26,7 +26,7 @@ export function InfographicSection() {
                     <div className="mx-auto bg-primary/10 rounded-full h-20 w-20 flex items-center justify-center mb-4 transition-colors group-hover:bg-primary">
                       <station.icon className="h-10 w-10 text-primary transition-colors group-hover:text-primary-foreground" />
                     </div>
-                    <CardTitle className="font-headline text-lg">{station.title}</CardTitle>
+                    <CardTitle className="font-headline text-base">{station.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground text-sm">{station.shortDescription}</p>
