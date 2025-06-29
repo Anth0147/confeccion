@@ -3,8 +3,8 @@
 import { APIProvider, Map, Marker } from '@vis.gl/react-google-maps';
 
 export function LocationMap() {
-  // Coordinates for Plaza de Armas, Trujillo, Peru as a central point.
-  const position = { lat: -8.11194, lng: -79.02889 };
+  // Coordinates for C.C. Don Carlos, Trujillo, Peru
+  const position = { lat: -8.1155, lng: -79.0303 };
   const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
   if (!apiKey) {
@@ -24,13 +24,13 @@ export function LocationMap() {
     <APIProvider apiKey={apiKey}>
       <Map
         defaultCenter={position}
-        defaultZoom={15}
+        defaultZoom={17}
         mapId="confeccion-estrellita-map"
         className="w-full h-full"
         gestureHandling={'greedy'}
         disableDefaultUI={true}
       >
-        <Marker position={position} title="CC Don Carlos Location (Approx.)" />
+        <Marker position={position} title="C.C. Don Carlos" />
       </Map>
     </APIProvider>
   );
