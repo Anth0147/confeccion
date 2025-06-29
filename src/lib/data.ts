@@ -35,9 +35,9 @@ const stations: Station[] = [
       { name: "Diseños por Trimestre", value: "50+" },
     ],
     galleryImages: [
-      'https://placehold.co/600x400',
-      'https://placehold.co/600x400',
-      'https://placehold.co/600x400',
+      '/images/design/image-1.jpg',
+      '/images/design/image-2.jpg',
+      '/images/design/image-3.jpg',
     ],
   },
   {
@@ -59,9 +59,9 @@ const stations: Station[] = [
       { name: "Precisión de Corte", value: "±1mm" },
     ],
     galleryImages: [
-      'https://placehold.co/600x400',
-      'https://placehold.co/600x400',
-      'https://placehold.co/600x400',
+      '/images/cutting/image-1.jpg',
+      '/images/cutting/image-2.jpg',
+      '/images/cutting/image-3.jpg',
     ],
   },
   {
@@ -83,9 +83,9 @@ const stations: Station[] = [
       { name: "Eficiencia de Línea", value: "85%" },
     ],
     galleryImages: [
-      'https://placehold.co/600x400',
-      'https://placehold.co/600x400',
-      'https://placehold.co/600x400',
+      '/images/sewing/image-1.jpg',
+      '/images/sewing/image-2.jpg',
+      '/images/sewing/image-3.jpg',
     ],
   },
   {
@@ -107,9 +107,9 @@ const stations: Station[] = [
       { name: "Tasa de Devolución (Calidad)", value: "< 0.5%" },
     ],
     galleryImages: [
-      'https://placehold.co/600x400',
-      'https://placehold.co/600x400',
-      'https://placehold.co/600x400',
+      '/images/finishing/image-1.jpg',
+      '/images/finishing/image-2.jpg',
+      '/images/finishing/image-3.jpg',
     ],
   },
   {
@@ -131,9 +131,9 @@ const stations: Station[] = [
       { name: "Material de Empaque", value: "80% reciclados" },
     ],
     galleryImages: [
-      'https://placehold.co/600x400',
-      'https://placehold.co/600x400',
-      'https://placehold.co/600x400',
+      '/images/packaging/image-1.jpg',
+      '/images/packaging/image-2.jpg',
+      '/images/packaging/image-3.jpg',
     ],
   },
 ];
