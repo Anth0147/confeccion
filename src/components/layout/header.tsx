@@ -6,7 +6,7 @@ import { Menu, Scissors } from 'lucide-react';
 export function Header() {
   const navLinks = [
     { name: 'Nuestro Proceso', href: '#process' },
-    { name: 'Contáctanos', href: '#contact' },
+    { name: 'Ubícanos', href: '#contact' },
   ];
 
   return (
