@@ -1,37 +1,31 @@
 'use client';
 
-import { APIProvider, Map, Marker } from '@vis.gl/react-google-maps';
+import Image from 'next/image';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { MapPin } from 'lucide-react';
 
 export function LocationMap() {
-  // Coordinates for C.C. Don Carlos, Trujillo, Peru
-  const position = { lat: -8.1155, lng: -79.0303 };
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
-
-  if (!apiKey) {
-    return (
-      <div className="w-full h-full bg-muted flex items-center justify-center rounded-lg">
-        <div className="text-muted-foreground text-center p-4">
-          <p className="font-semibold">Could not load map.</p>
-          <p className="text-sm">
-            Google Maps API Key is missing. Please add it to your environment variables as NEXT_PUBLIC_GOOGLE_MAPS_API_KEY.
-          </p>
-        </div>
-      </div>
-    );
-  }
+  const mapUrl = 'https://maps.app.goo.gl/gDJKmVtzQfpqU9HE9';
 
   return (
-    <APIProvider apiKey={apiKey}>
-      <Map
-        defaultCenter={position}
-        defaultZoom={17}
-        mapId="confeccion-estrellita-map"
-        className="w-full h-full"
-        gestureHandling={'greedy'}
-        disableDefaultUI={true}
-      >
-        <Marker position={position} title="C.C. Don Carlos" />
-      </Map>
-    </APIProvider>
+    <div className="relative w-full h-full">
+      <Link href={mapUrl} target="_blank" rel="noopener noreferrer" className="block w-full h-full group">
+        <Image
+          src="https://placehold.co/1200x800.png"
+          alt="Map showing location of Confección Estrellita"
+          fill={true}
+          objectFit="cover"
+          className="rounded-lg"
+          data-ai-hint="street map"
+        />
+        <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-lg transition-colors group-hover:bg-black/50">
+          <Button size="lg">
+            <MapPin className="mr-2 h-5 w-5" />
+            View on Google Maps
+          </Button>
+        </div>
+      </Link>
+    </div>
   );
 }
